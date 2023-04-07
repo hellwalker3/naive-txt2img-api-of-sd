@@ -1,6 +1,6 @@
 # naive-txt2img-api-of-sd
 
-This repository contains an attempt to modify the Automtic1111webui txt2img API to work with other extensions by directly rewriting the program. Although we are aware that directly modifying the code is not ideal, this was done due to our own laziness and lack of knowledge.
+This repository contains an attempt to modify the Automatic1111webui txt2img API to work with other extensions by directly rewriting the program. Although we are aware that directly modifying the code is not ideal, this was done due to our own laziness and lack of knowledge.
 
 ## Implementation Details
 We tried to use the functions that run behind the scenes when executing txt2img in the webui directly through the API. Since the arguments are difficult to understand, we first executed txt2img in the webui, checked the arguments being passed, and then passed them in the API.
