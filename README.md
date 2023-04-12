@@ -15,3 +15,6 @@ It is convenient to run the server notebook on Colab with GPU and run the client
 
 ## Note on controlnet Compatibility
 In the latest version of controlnet, the scripts.external_code.ControlNetUnit object is passed as an argument to txt2img, making simple usage difficult. Therefore, we have downgraded the version in the notebook.
+
+## Addition
+We've added a new notebook titled 'Extracting_Pose_Estimation_from_Videos_using_MMpose.ipynb' This notebook allows you to obtain videos from YouTube, perform pose estimation using MMpose, and save the resulting pose estimation images to your Google Drive.
