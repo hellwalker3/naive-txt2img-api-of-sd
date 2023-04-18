@@ -13,8 +13,8 @@ We have successfully executed LoRA+controlnet, Lora+multicontrolnet, and LoRA+tw
 ## Recommended Setup
 It is convenient to run the server notebook on Colab with GPU and run the client notebook locally, as images will be saved locally.
 
-## Note on controlnet Compatibility
-In the latest version of controlnet, the scripts.external_code.ControlNetUnit object is passed as an argument to txt2img, making simple usage difficult. Therefore, we have downgraded the version in the notebook.
+## We have now added compatibility with the latest version of controlnet.
+Instead of passing the scripts.external_code.ControlNetUnit object, pass [enabled, module, model, weight, image, guidance_end] as arguments to the txt2img2. If you need to modify any specific variables, please update the convert_args function in the txt2img2 API.
 
 ## Addition
 We've added a new notebook titled 'Extracting_Pose_Estimation_from_Videos_using_MMpose.ipynb' This notebook allows you to obtain videos from YouTube, perform pose estimation using MMpose, and save the resulting pose estimation images to your Google Drive.
